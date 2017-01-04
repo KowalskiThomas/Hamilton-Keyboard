@@ -1,48 +1,38 @@
 #include "Hamilton.h"
 #include "keys.h"
 
-#define MUTE KC__MUTE
-#define VDWN KC__VOLDOWN
-#define VLUP KC__VOLUP
-#define MPLY KC_MPLY
-#define MPRV KC_MPRV
-#define MNXT KC_MNXT
-#define TRNS KC_TRNS
-
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // [0] Base layer
-    KEYMAP(ESC,  F1,   F1,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,  FN2,  PSCR,    HOME,   \
-           GRV,  KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, MINS, EQL,  BSPC, END,             \
-           TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, ENT,  PGUP,            \
-           CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NUHS,       PGDN,            \
-           LSFT, Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, RCTL, RSFT, UP,   DEL,             \
+    KEYMAP(ESC,  F1,   F1,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,  PSCR, HOME,   \
+           GRV,  KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, MINS, EQL,  BSPC, END,    \
+           TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC, ENT,  PGUP,   \
+           CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NUHS,       PGDN,   \
+           LSFT, Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, RCTL, RSFT, UP,   DEL,    \
            LCTL, LGUI, LALT,             SPC,                RALT, FN2,  FN3,  LEFT, DOWN, RIGHT),
     
     // [1] Media Layer
-    KEYMAP(TRNS, MUTE, VDWN, VLUP, MPLY, MPRV, MNXT, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,  TRNS, \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,        \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,        \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, /* E */      \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,        \
+    KEYMAP(TRNS, MUTE, VDWN, VLUP, MPLY, MPRV, MNXT, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
+           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
+           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
+           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, /* E */ TRNS,  \
+           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
            TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
     
     // [2] Greek Layer
-    KEYMAP(TRNS,    TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS, TRNS, \
-           TRNS,    TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,       \
-           TRNS,    UC(ALPHA),  UC(ZETA),  TRNS,         UC(EPSILON),  UC(TAU),   TRNS, TRNS, TRNS,      UC(OMEGA),  UC(PI),    TRNS, TRNS, TRNS,   TRNS,       \
-           TRNS,    TRNS,       UC(SIGMA), UC(DELTA),    UC(PHI),      UC(GAMMA), TRNS, TRNS, UC(CHI),   UC(LAMBDA), UC(KC_MU), TRNS, TRNS, /* E */ TRNS,       \
-           TRNS,    UC(PSI),    UC(XI),    TRNS,         TRNS,         UC(BETA),  TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,       \
+    KEYMAP(TRNS,    TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
+           TRNS,    TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
+           TRNS,    UC(ALPHA),  UC(ZETA),  TRNS,         UC(EPSILON),  UC(TAU),   TRNS, TRNS, TRNS,      UC(OMEGA),  UC(PI),    TRNS, TRNS, TRNS,   TRNS,  \
+           TRNS,    TRNS,       UC(SIGMA), UC(DELTA),    UC(PHI),      UC(GAMMA), TRNS, TRNS, UC(CHI),   UC(LAMBDA), UC(KC_MU), TRNS, TRNS, /* E */ TRNS,  \
+           TRNS,    UC(PSI),    UC(XI),    TRNS,         TRNS,         UC(BETA),  TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
            TRNS,    TRNS,       TRNS,      TRNS,                     /* SPACE */                         TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS),
 
     // [3] Mathematical Layer
-    KEYMAP(TRNS,    TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,       TRNS, TRNS, TRNS, \
-           UC(_IN), UC(LOR),    TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     UC(DIFF),   TRNS, TRNS,       \
-           TRNS,    UC(ALL),    UC(BBZ),   UC(EXIS),     UC(BBR),      UC(EQUV),  UC(UPAR), UC(UNIN), UC(INTR), UC(IFF),  UC(IF),   TRNS,     TRNS,       TRNS, TRNS,       \
-           TRNS,    UC(BBQ),    UC(EMPT),  UC(PART),     UC(INFY),     UC(LEAR),   UC(DNAR), UC(RIAR), UC(APPX), UC(NABL), TRNS,     UC(PROP), UC(INFR),/* E */ TRNS,       \
-           TRNS,    UC(LNOT),   UC(TIMS),  UC(BBC),      UC(SQRT),     TRNS,      UC(BBN),  UC(INTG), UC(DIVD), UC(PSMN), TRNS,     TRNS,     TRNS,       TRNS, TRNS,       \
-           TRNS,    TRNS,       TRNS,       TRNS,                     /* SPACE */                                TRNS,     TRNS,     TRNS,     TRNS,       TRNS, TRNS),    
+    KEYMAP(TRNS,    TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,       TRNS,   TRNS,  \
+           UC(_IN), UC(LOR),    TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     UC(DIFF),   TRNS,   TRNS,  \
+           TRNS,    UC(ALL),    UC(BBZ),   UC(EXIS),     UC(BBR),      UC(EQUV),  UC(UPAR), UC(UNIN), UC(INTR), UC(IFF),  UC(IF),   TRNS,     TRNS,       TRNS,   TRNS,  \
+           TRNS,    UC(BBQ),    UC(EMPT),  UC(PART),     UC(INFY),     UC(LEAR),   UC(DNAR), UC(RIAR), UC(APPX), UC(NABL), TRNS,     UC(PROP), UC(INFR),  /* E */ TRNS,  \
+           TRNS,    UC(LNOT),   UC(TIMS),  UC(BBC),      UC(SQRT),     TRNS,      UC(BBN),  UC(INTG), UC(DIVD), UC(PSMN), TRNS,     TRNS,     TRNS,       TRNS,   TRNS,  \
+           TRNS,    TRNS,       TRNS,       TRNS,                     /* SPACE */                                TRNS,     TRNS,     TRNS,     TRNS,      TRNS,   TRNS),    
 };
 
 const uint16_t PROGMEM fn_actions[] = 

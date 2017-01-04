@@ -186,3 +186,12 @@
     #define DNAR 0x2193
     #define LEAR 0x2190
     #define RIAR 0x2192
+
+// MEDIA KEYS
+    #define MUTE KC__MUTE
+    #define VDWN KC__VOLDOWN
+    #define VLUP KC__VOLUP
+    #define MPLY KC_MPLY
+    #define MPRV KC_MPRV
+    #define MNXT KC_MNXT
+    #define TRNS KC_TRNS
