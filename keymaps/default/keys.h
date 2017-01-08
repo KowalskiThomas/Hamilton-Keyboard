@@ -70,10 +70,14 @@
     #define FN1 KC_FN1
     #define FN2 KC_FN2
     #define FN3 KC_FN3
+    #define FN4 KC_FN4
     
     #define LCTL KC_LCTL
     #define LGUI KC_LGUI
     #define LALT KC_LALT
+    #define RCTL KC_RCTL
+    #define RGUI KC_RGUI
+    #define RALT KC_RALT
     #define SPC KC_SPC
 
 
