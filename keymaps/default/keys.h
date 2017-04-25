@@ -2,7 +2,7 @@
     // I don't get any pride out of this.
     #define ESC KC_ESC
     #define F1 KC_F1
-    #define F1 KC_F1
+    #define F2 KC_F2
     #define F3 KC_F3
     #define F4 KC_F4
     #define F5 KC_F5
