@@ -118,12 +118,12 @@ const uint32_t PROGMEM unicode_map[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // [0] Base layer
-    KEYMAP(ESC,     F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,   PSCR,  HOME,   \
-           GRV,     KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, MINS, EQL,   BSPC,  END,    \
-           TAB,     Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC,  ENT,   PGUP,   \
-           CAPS,    A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NUHS,  /*E*/  PGDN,   \
-           RSFT,    FN4,  Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, FN2,   UP,    DEL,    \
-           LCTL,    FN1,  LALT,             SPC,                    RALT, RGUI, RCTL, LEFT,  DOWN,  RIGHT),
+    KEYMAP(ESC,  F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,   PSCR,  HOME,   \
+           GRV,  KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9, KC_0, MINS, EQL,   BSPC,  END,    \
+           TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    LBRC, RBRC,  ENT,   PGUP,   \
+           CAPS, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT, NUHS,  /*E*/  PGDN,   \
+           RSFT, NUBS, Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, FN2,   UP,    DEL,    \
+           LCTL, FN1,  LALT,             SPC,                    RALT, RGUI, RCTL, LEFT,  DOWN,  RIGHT),
     
     // [1] Media Layer
     KEYMAP(TRNS, MUTE, VDWN, VLUP, MPLY, MPRV, MNXT, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \

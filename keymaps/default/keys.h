@@ -49,6 +49,7 @@
     #define SCLN KC_SCLN
     #define QUOT KC_QUOT
     #define NUHS KC_NUHS
+    #define NUBS KC_NUBS
     #define PGDN KC_PGDN
     #define LSFT KC_LSFT
     #define Z KC_Z
@@ -185,7 +186,7 @@
     //exists
     #define EXIS 0x2203
     
-    //Arrows
+//Arrows
     #define UPAR 0x2191
     #define DNAR 0x2193
     #define LEAR 0x2190
