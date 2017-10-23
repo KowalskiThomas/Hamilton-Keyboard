@@ -126,43 +126,43 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            LCTL, FN1,  LALT,             SPC,                    RALT, RGUI, RCTL, LEFT,  DOWN,  RIGHT),
     
     // [1] Media Layer
-    KEYMAP(TRNS, MUTE, VDWN, VLUP, MPLY, MPRV, MNXT, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, /* E */ TRNS,   \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   TRNS,   \
-           TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS),
+    KEYMAP(____, MUTE, VDWN, VLUP, MPLY, MPRV, MNXT, ____, ____, ____, ____, ____, ____, ____,   ____,   \
+           ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,   ____,   \
+           ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,   ____,   \
+           ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, /* E */ ____,   \
+           ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,   ____,   \
+           ____, ____, ____, ____, ____, ____, ____, ____, ____, ____),
     
     // [2] Greek Layer
-    KEYMAP(RESET,     TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     UC(LALPH),  UC(ZETA),  TRNS,         UC(EPSILON),  UC(TAU),   TRNS, TRNS, TRNS,      UC(OMEGA),  UC(PI),    TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       UC(SIGMA), UC(DELTA),    UC(PHI),      UC(GAMMA), TRNS, TRNS, UC(CHI),   UC(LAMBDA), UC(KC_MU), TRNS, TRNS, /* E */ TRNS,  \
-             FN3,     UC(PSI),    UC(XI),    TRNS,         TRNS,         UC(BETA),  TRNS, TRNS, TRNS,      TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       TRNS,      TRNS,                     /* SPACE */                         TRNS,       TRNS,      TRNS, TRNS, TRNS,   TRNS),
+    KEYMAP(RESET,     ____,       ____,      ____,         ____,         ____,      ____, ____, ____,      ____,       ____,      ____, ____, ____,   ____,  \
+            ____,     ____,       ____,      ____,         ____,         ____,      ____, ____, ____,      ____,       ____,      ____, ____, ____,   ____,  \
+            ____,     UC(LALPH),  UC(ZETA),  ____,         UC(EPSILON),  UC(TAU),   ____, ____, ____,      UC(OMEGA),  UC(PI),    ____, ____, ____,   ____,  \
+            ____,     ____,       UC(SIGMA), UC(DELTA),    UC(PHI),      UC(GAMMA), ____, ____, UC(CHI),   UC(LAMBDA), UC(KC_MU), ____, ____, /* E */ ____,  \
+             FN3,     UC(PSI),    UC(XI),    ____,         ____,         UC(BETA),  ____, ____, ____,      ____,       ____,      ____, ____, ____,   ____,  \
+            ____,     ____,       ____,      ____,                     /* SPACE */                         ____,       ____,      ____, ____, ____,   ____),
 
     // [3] Capital Greek Layer
-    KEYMAP(RESET,     TRNS,       TRNS,        TRNS,         TRNS,         TRNS,        TRNS, TRNS, TRNS,      TRNS,         TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       TRNS,        TRNS,         TRNS,         TRNS,        TRNS, TRNS, TRNS,      TRNS,         TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       TRNS,        TRNS,         TRNS,         UC(C_THETA), TRNS, TRNS, TRNS,      UC(C_OMEGA),  UC(C_PI),  TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       UC(C_SIGMA), UC(C_DELTA),  UC(C_PHI),    UC(C_GAMMA), TRNS, TRNS, UC(C_CHI), UC(C_LAMBDA), TRNS,      TRNS, TRNS, /* E */ TRNS,  \
-             FN3,     UC(C_PSI),  UC(C_XI),    TRNS,         TRNS,         TRNS,        TRNS, TRNS, TRNS,      TRNS,         TRNS,      TRNS, TRNS, TRNS,   TRNS,  \
-            TRNS,     TRNS,       TRNS,        TRNS,                     /* SPACE */                         TRNS,           TRNS,      TRNS, TRNS, TRNS,   TRNS),
+    KEYMAP(RESET,     ____,       ____,        ____,         ____,         ____,        ____, ____, ____,      ____,         ____,      ____, ____, ____,   ____,  \
+            ____,     ____,       ____,        ____,         ____,         ____,        ____, ____, ____,      ____,         ____,      ____, ____, ____,   ____,  \
+            ____,     ____,       ____,        ____,         ____,         UC(C_THETA), ____, ____, ____,      UC(C_OMEGA),  UC(C_PI),  ____, ____, ____,   ____,  \
+            ____,     ____,       UC(C_SIGMA), UC(C_DELTA),  UC(C_PHI),    UC(C_GAMMA), ____, ____, UC(C_CHI), UC(C_LAMBDA), ____,      ____, ____, /* E */ ____,  \
+             FN3,     UC(C_PSI),  UC(C_XI),    ____,         ____,         ____,        ____, ____, ____,      ____,         ____,      ____, ____, ____,   ____,  \
+            ____,     ____,       ____,        ____,                     /* SPACE */                         ____,           ____,      ____, ____, ____,   ____),
 
     // [4] Mathematical Layer
-    KEYMAP(  RESET, TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,       TRNS,      TRNS,  \
-           UC(_IN), UC(LOR),    TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     UC(DIFF),   TRNS,      TRNS,  \
-              TRNS, UC(ALL),    UC(BBZ),   UC(EXIS),     UC(BBR),      UC(EQUV),  UC(UPAR), UC(UNIN), UC(INTR), UC(IFF),  UC(IF),   TRNS,     TRNS,       TRNS,      TRNS,  \
-              TRNS, UC(BBQ),    UC(EMPT),  UC(PART),     UC(INFY),     UC(LEAR),  UC(DNAR), UC(RIAR), UC(APPX), UC(NABL), TRNS,     UC(PROP), UC(INFR),   /* E */    TRNS,  \
-              TRNS, UC(LNOT),   UC(TIMS),  UC(BBC),      UC(SQRT),     TRNS,      UC(BBN),  UC(INTG), UC(DIVD), UC(PSMN), TRNS,     TRNS,     TRNS,       UC(UPAR),  TRNS,  \
-              TRNS, TRNS,       TRNS,       TRNS,                     /* SPACE */                                TRNS,     TRNS,     TRNS,    UC(LEAR),   UC(DNAR),  UC(RIAR)),    
+    KEYMAP(  RESET, ____,       ____,      ____,         ____,         ____,      ____,     ____,     ____,     ____,     ____,     ____,     ____,       ____,      ____,  \
+           UC(_IN), UC(LOR),    ____,      ____,         ____,         ____,      ____,     ____,     ____,     ____,     ____,     ____,     UC(DIFF),   ____,      ____,  \
+              ____, UC(ALL),    UC(BBZ),   UC(EXIS),     UC(BBR),      UC(EQUV),  UC(UPAR), UC(UNIN), UC(INTR), UC(IFF),  UC(IF),   ____,     ____,       ____,      ____,  \
+              ____, UC(BBQ),    UC(EMPT),  UC(PART),     UC(INFY),     UC(LEAR),  UC(DNAR), UC(RIAR), UC(APPX), UC(NABL), ____,     UC(PROP), UC(INFR),   /* E */    ____,  \
+              ____, UC(LNOT),   UC(TIMS),  UC(BBC),      UC(SQRT),     ____,      UC(BBN),  UC(INTG), UC(DIVD), UC(PSMN), ____,     ____,     ____,       UC(UPAR),  ____,  \
+              ____, ____,       ____,       ____,                     /* SPACE */                                ____,     ____,     ____,    UC(LEAR),   UC(DNAR),  UC(RIAR)),    
     // [5] "Capital" Mathematics Layer
-    KEYMAP(  RESET, TRNS,       TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,       TRNS,      TRNS,  \
-           UC(_IN), UC(LOR),    TRNS,      TRNS,         TRNS,         TRNS,      TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     TRNS,     UC(DIFF),   TRNS,      TRNS,  \
-              TRNS, UC(ALL),    UC(BBZ),   UC(EXIS),     UC(BBR),      UC(EQUV),  UC(UPAR), UC(UNIN), UC(INTR), UC(IFF),  UC(IF),   TRNS,     TRNS,       TRNS,      TRNS,  \
-              TRNS, UC(BBQ),    UC(EMPT),  UC(PART),     UC(INFY),     UC(LEAR),  UC(DNAR), UC(RIAR), UC(APPX), UC(NABL), TRNS,     UC(PROP), UC(INFR),   /* E */    TRNS,  \
-              TRNS, UC(LNOT),   UC(TIMS),  UC(BBC),      UC(SQRT),     TRNS,      UC(BBN),  UC(INTG), UC(DIVD), UC(PSMN), TRNS,     TRNS,     TRNS,       UC(UPAR),  TRNS,  \
-              TRNS, TRNS,       TRNS,       TRNS,                     /* SPACE */                                TRNS,     TRNS,     TRNS,    UC(LEAR),   UC(DNAR),  UC(RIAR)),    
+    KEYMAP(  RESET, ____,       ____,      ____,         ____,         ____,      ____,     ____,     ____,     ____,     ____,     ____,     ____,       ____,      ____,  \
+           UC(_IN), UC(LOR),    ____,      ____,         ____,         ____,      ____,     ____,     ____,     ____,     ____,     ____,     UC(DIFF),   ____,      ____,  \
+              ____, UC(ALL),    UC(BBZ),   UC(EXIS),     UC(BBR),      UC(EQUV),  UC(UPAR), UC(UNIN), UC(INTR), UC(IFF),  UC(IF),   ____,     ____,       ____,      ____,  \
+              ____, UC(BBQ),    UC(EMPT),  UC(PART),     UC(INFY),     UC(LEAR),  UC(DNAR), UC(RIAR), UC(APPX), UC(NABL), ____,     UC(PROP), UC(INFR),   /* E */    ____,  \
+              ____, UC(LNOT),   UC(TIMS),  UC(BBC),      UC(SQRT),     ____,      UC(BBN),  UC(INTG), UC(DIVD), UC(PSMN), ____,     ____,     ____,       UC(UPAR),  ____,  \
+              ____, ____,       ____,       ____,                     /* SPACE */                                ____,     ____,     ____,    UC(LEAR),   UC(DNAR),  UC(RIAR)),    
 };
 
 #define L_DEFAULT      0

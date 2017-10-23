@@ -11,6 +11,8 @@ Download or clone the whole firmware and navigate to the keyboards/Hamilton fold
 
 Depending on which keymap you would like to use, you will have to compile slightly differently.
 
+**DISABLE THE WARNINGS IN THE RULES.MK**
+
 ### Default
 
 To build with the default keymap, simply run `make default`.

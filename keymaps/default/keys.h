@@ -193,10 +193,10 @@
     #define RIAR 0x2192
 
 // MEDIA KEYS
-    #define MUTE KC__MUTE
-    #define VDWN KC__VOLDOWN
-    #define VLUP KC__VOLUP
+    #define MUTE KC_AUDIO_MUTE
+    #define VDWN KC_AUDIO_VOL_UP
+    #define VLUP KC_AUDIO_VOL_DOWN
     #define MPLY KC_MPLY
     #define MPRV KC_MPRV
     #define MNXT KC_MNXT
-    #define TRNS KC_TRNS
+    #define ____ KC_TRNS
