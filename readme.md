@@ -1,30 +1,24 @@
 Hamilton keyboard firmware
 ======================
 
-## Quantum MK Firmware
+[!images/layout.png]
 
-For the full Quantum feature list, see [the parent readme](/).
+This is the code for my keyboard's firmware. It is based on the [Quantum MK mechanical keyboard firmware](https://github.com/qmk/qmk_firmware). 
+
+This repository needs to be cloned into QMK's [keyboards](https://github.com/qmk/qmk_firmware/tree/master/keyboards) directory. It has purposefuly not been merged into QMK's repository for privacy reasons. 
+
+More information about the Hamilton keyboard can be [found on my blog](https://kowalski.legtux.org/2017/10/hamilton-keyboard/) (in French). 
 
 ## Building
 
-Download or clone the whole firmware and navigate to the keyboards/Hamilton folder. Once your dev env is setup, you'll be able to type `make` to generate your .hex - you can then use the Teensy Loader to program your .hex file. 
-
-Depending on which keymap you would like to use, you will have to compile slightly differently.
+Download or clone the whole firmware and navigate to the `keyboards/Hamilton` folder. Type `make` to compile the firmware into a `.hex` file. You can then use the Teensy Loader to program your `.hex` file. 
 
 **DISABLE THE WARNINGS IN THE RULES.MK**
 
-### Default
+## Cool pictures
 
-To build with the default keymap, simply run `make default`.
+[!images/workspace.jpg]
 
-### Other Keymaps
+[!images/wiring.jpg]
 
-Several version of keymap are available in advance but you are recommended to define your favorite layout yourself. To define your own keymap create a folder with the name of your keymap in the keymaps folder, and see keymap documentation (you can find in top readme.md) and existant keymap files.
-
-To build the firmware binary hex file with a keymap just do `make` with a keymap like this:
-
-```
-$ make [default|jack|<name>]
-```
-
-Keymaps follow the format **__\<name\>.c__** and are stored in the `keymaps` folder.
+[!images/result.jpg]
