@@ -1,7 +1,7 @@
 Hamilton keyboard firmware
 ======================
 
-[!images/layout.png]
+![Layout](images/layout.png)
 
 This is the code for my keyboard's firmware. It is based on the [Quantum MK mechanical keyboard firmware](https://github.com/qmk/qmk_firmware). 
 
@@ -17,8 +17,8 @@ Download or clone the whole firmware and navigate to the `keyboards/Hamilton` fo
 
 ## Cool pictures
 
-[!images/workspace.jpg]
+![My workspace](images/workspace.jpg)
 
-[!images/wiring.jpg]
+![The wiring process](images/wiring.jpg)
 
-[!images/result.jpg]
+![The (great) result](images/result.jpg)
